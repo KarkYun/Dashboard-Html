@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar{
+    display: flex;
+    padding: 10px 0;
+    text-decoration: none;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #497AF5;
+    height: 100%;
+    left: 0;
+    width:230px;
+}
+
+.sidebar-header img {
+    display: block; /* prevents inline-img whitespace issues when sizing with percent */
+    max-width: 100%;
+    width: 3px;
+    height: auto;
+    
+}
+
+.sidebar-nav{
+    flex: 1;
+    flex-direction: column;
+    height: 118%;
+    display: flex;
+}
+
+.sidebar-nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav li{
+    margin: 10px 0;
+    
+}
+
+.sidebar-nav a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 12px;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    border-left: 5px solid transparent;
+    padding-left: 23%;
+}
+
+.sidebar-nav i{
+    font-size: 16px;
+    text-align: center;
+    flex: 0 0 20px;
+}
+
+.sidebar-nav a:hover{
+    border-left-color:rgb(255, 255, 255);
+    transition: 0.4s;
+    transform: translateX(10px);
+    color: #cedeee;
+    background-color: rgba(173, 210, 243, 0.068);
+}
+
+
+.sidebar h3{
+    font-size: 23px;
+    text-align: center;
+    font-weight: 650;
+    color:white;
+    padding-bottom: 20px;
+}
+
+.sidebar-bottom{
+    margin-top: auto;
+}
+
+section:not(.sidebar) {
+    margin-left: 255px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    padding: 16px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.cards p{
+    color: #b4b0b0;
+}
+
+
+.heading{
+    padding-top: 3.5%;
+    
+}
+
+.heading h2{
+     font-size: 26px;
+     font-weight: 600;
+}
+
+.heading p{
+    font-size: 13px;
+    color: #b4b0b0;
+}
